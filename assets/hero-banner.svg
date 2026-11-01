@@ -62,11 +62,11 @@
 
   <!-- Status Pill Top Left -->
   <g transform="translate(56, 42)">
-    <rect width="310" height="28" rx="14" fill="#111827" stroke="#1e293b" stroke-width="1"/>
+    <rect width="336" height="28" rx="14" fill="#111827" stroke="#1e293b" stroke-width="1"/>
     <circle cx="16" cy="14" r="4" fill="#10b981">
       <animate attributeName="opacity" values="1;0.25;1" dur="2s" repeatCount="indefinite"/>
     </circle>
-    <text x="30" y="18" font-family="'JetBrains Mono', 'Fira Code', Consolas, monospace" font-size="11" fill="#94a3b8" letter-spacing="0.8">SYSTEM ONLINE // QUANT &amp; AI ARCHITECTURE</text>
+    <text x="30" y="18" font-family="'JetBrains Mono', 'Fira Code', Consolas, monospace" font-size="11" fill="#94a3b8" letter-spacing="0.8">SYSTEM ONLINE // QUANTITATIVE ML ECOSYSTEM</text>
   </g>
 
   <!-- Main Heading -->
@@ -76,37 +76,33 @@
 
   <!-- Subtitle -->
   <text x="56" y="172" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#38bdf8">
-    Quantitative Systems Architect &amp; AI/ML Engineer
+    Quantitative Systems Architect &amp; Financial ML Engineer
   </text>
 
   <!-- Description -->
   <text x="56" y="208" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14.5" fill="#94a3b8">
-    Building institutional-grade time-series anomaly engines, walk-forward algorithmic trading studios,
+    Engineering real-time market anomaly detection engines, walk-forward algorithmic trading studios,
   </text>
   <text x="56" y="230" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14.5" fill="#94a3b8">
-    and autonomous multi-agent MCP workflows.
+    and evidence-first derivatives research platforms.
   </text>
 
-  <!-- Ecosystem Badges Row -->
+  <!-- Ecosystem Badges Row (Pure 4-Pillar Quant Suite) -->
   <g transform="translate(56, 262)">
     <!-- Pill 1 -->
-    <rect x="0" y="0" width="155" height="34" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="1" stroke-opacity="0.6"/>
-    <text x="16" y="21" font-family="'JetBrains Mono', Consolas, monospace" font-size="12" font-weight="600" fill="#38bdf8">⚡ PeakPulse AI</text>
+    <rect x="0" y="0" width="172" height="34" rx="8" fill="#0f172a" stroke="#6366f1" stroke-width="1" stroke-opacity="0.65"/>
+    <text x="16" y="21" font-family="'JetBrains Mono', Consolas, monospace" font-size="12" font-weight="600" fill="#818cf8">📈 FreqPilot Studio</text>
 
     <!-- Pill 2 -->
-    <rect x="169" y="0" width="160" height="34" rx="8" fill="#0f172a" stroke="#6366f1" stroke-width="1" stroke-opacity="0.6"/>
-    <text x="185" y="21" font-family="'JetBrains Mono', Consolas, monospace" font-size="12" font-weight="600" fill="#818cf8">📈 FreqPilot Studio</text>
+    <rect x="186" y="0" width="160" height="34" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="1" stroke-opacity="0.65"/>
+    <text x="202" y="21" font-family="'JetBrains Mono', Consolas, monospace" font-size="12" font-weight="600" fill="#38bdf8">⚡ PeakPulse AI</text>
 
     <!-- Pill 3 -->
-    <rect x="343" y="0" width="165" height="34" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1" stroke-opacity="0.6"/>
-    <text x="359" y="21" font-family="'JetBrains Mono', Consolas, monospace" font-size="12" font-weight="600" fill="#34d399">🔎 FreqPilot Intel</text>
+    <rect x="360" y="0" width="176" height="34" rx="8" fill="#0f172a" stroke="#f59e0b" stroke-width="1" stroke-opacity="0.65"/>
+    <text x="376" y="21" font-family="'JetBrains Mono', Consolas, monospace" font-size="12" font-weight="600" fill="#fbbf24">📚 Strategy Library</text>
 
     <!-- Pill 4 -->
-    <rect x="522" y="0" width="188" height="34" rx="8" fill="#0f172a" stroke="#a855f7" stroke-width="1" stroke-opacity="0.6"/>
-    <text x="538" y="21" font-family="'JetBrains Mono', Consolas, monospace" font-size="12" font-weight="600" fill="#c084fc">🤖 Binance Copilot MCP</text>
-
-    <!-- Pill 5 -->
-    <rect x="724" y="0" width="132" height="34" rx="8" fill="#0f172a" stroke="#f59e0b" stroke-width="1" stroke-opacity="0.6"/>
-    <text x="740" y="21" font-family="'JetBrains Mono', Consolas, monospace" font-size="12" font-weight="600" fill="#fbbf24">🛰️ SPARK OS</text>
+    <rect x="550" y="0" width="168" height="34" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1" stroke-opacity="0.65"/>
+    <text x="566" y="21" font-family="'JetBrains Mono', Consolas, monospace" font-size="12" font-weight="600" fill="#34d399">🔎 FreqPilot Intel</text>
   </g>
 </svg>
