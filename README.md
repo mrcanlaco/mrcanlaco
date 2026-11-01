@@ -5,6 +5,7 @@
 <br />
 
 [![FreqPilot Studio](https://img.shields.io/badge/LIVE_STUDIO-freqpilot.dev-0ea5e9?style=for-the-badge&logo=prometheus&logoColor=white)](https://freqpilot.dev)
+[![Strategy Library](https://img.shields.io/badge/STRATEGY_HUB-strategies.freqpilot.dev-f59e0b?style=for-the-badge&logo=cloudflare&logoColor=white)](https://strategies.freqpilot.dev)
 [![PeakPulse AI](https://img.shields.io/badge/ANOMALY_ENGINE-pulse.freqpilot.dev-8b5cf6?style=for-the-badge&logo=databricks&logoColor=white)](https://pulse.freqpilot.dev)
 [![FreqPilot Intel](https://img.shields.io/badge/MARKET_INTEL-intel.freqpilot.dev-10b981?style=for-the-badge&logo=cloudflare&logoColor=white)](https://intel.freqpilot.dev)
 [![GitHub Followers](https://img.shields.io/github/followers/mrcanlaco?style=for-the-badge&logo=github&label=Follow&color=1e293b)](https://github.com/mrcanlaco)
@@ -29,6 +30,7 @@ I design and engineer **evidence-first quantitative trading infrastructure**, **
 | :--- | :---: | :--- | :--- |
 | **[PeakPulse-AI](https://github.com/mrcanlaco/PeakPulse-AI)** | [`pulse.freqpilot.dev`](https://pulse.freqpilot.dev) | **Real-Time Market Anomaly Detection & Time-Series ML Engine**<br/>High-frequency market scanning, statistical regime shifts, and interactive financial telemetry pipelines. | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) |
 | **[freqpilot](https://github.com/mrcanlaco/freqpilot)** | [`freqpilot.dev`](https://freqpilot.dev) | **Quantitative Research, Walk-Forward Validation & Trading Studio**<br/>End-to-end strategy lab built on Official Freqtrade 2026.9 with Rust/Python acceleration and Vue UI. | ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Vue](https://img.shields.io/badge/Vue.js-35495E?style=flat-square&logo=vuedotjs&logoColor=4FC08D) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| **Strategy Library** | [`strategies.freqpilot.dev`](https://strategies.freqpilot.dev) | **Consolidated Strategy Research & Evidence Hub**<br/>Deduplicated strategy profiles, test revisions, result artifacts, and automated sync on Cloudflare D1 & R2. | ![Cloudflare](https://img.shields.io/badge/Cloudflare_Workers-F38020?style=flat-square&logo=cloudflare&logoColor=white) ![D1 & R2](https://img.shields.io/badge/D1_%26_R2-F38020?style=flat-square) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) |
 | **[freqpilot-intel](https://github.com/mrcanlaco/freqpilot-intel)** | [`intel.freqpilot.dev`](https://intel.freqpilot.dev) | **Evidence-First Research & Market Provenance Workspace**<br/>Public-source intelligence platform with verifiable data provenance and browser-local research synthesis. | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) |
 | **[binance-copilot-mcp](https://github.com/mrcanlaco/binance-copilot-mcp)** | [GitHub Repo](https://github.com/mrcanlaco/binance-copilot-mcp) | **The Zero-Friction AI Copilot for Binance (MCP Server)**<br/>Bridges Freqtrade/CCXT market execution & backtesting directly into Cursor, Windsurf, Claude Desktop & Antigravity. | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![MCP](https://img.shields.io/badge/MCP-Protocol-8b5cf6?style=flat-square) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) |
 | **[spark-os](https://github.com/mrcanlaco/spark-os)** | [GitHub Repo](https://github.com/mrcanlaco/spark-os) | **SPARK OS — AI Fleet Orchestration System**<br/>Coordinates autonomous multi-agent engineering fleets across structured 6-phase software delivery lifecycles. | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) ![AI Agents](https://img.shields.io/badge/Multi--Agent-Orchestration-f59e0b?style=flat-square) |
@@ -44,9 +46,10 @@ flowchart LR
         Pulse["⚡ PeakPulse AI\n(pulse.freqpilot.dev)"]
     end
 
-    subgraph Core["Quantitative Execution & Alpha"]
-        Studio["📈 FreqPilot Studio\n(freqpilot.dev)"]
+    subgraph Core["Quantitative Strategy & Execution"]
+        StratLib["📚 Strategy Library\n(strategies.freqpilot.dev)"]
         Alpha["🧮 Orthogonal Alpha\n& Walk-Forward Engine"]
+        Studio["📈 FreqPilot Studio\n(freqpilot.dev)"]
     end
 
     subgraph Agentic["Agentic Control Plane"]
@@ -54,8 +57,9 @@ flowchart LR
         Spark["🛰️ SPARK OS\n(6-Phase Agent Fleet)"]
     end
 
-    Intel -->|Provenance Signals| Alpha
+    Intel -->|Provenance Signals| StratLib
     Pulse -->|Regime & Anomaly Telemetry| Alpha
+    StratLib -->|Curated Profiles & Revisions| Alpha
     Alpha -->|Validated Strategies| Studio
     MCP <-->|CCXT / Freqtrade API| Studio
     Spark -->|Autonomous R&D| Core
